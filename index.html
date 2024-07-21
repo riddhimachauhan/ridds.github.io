@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddhima's Introduction</title>
+    <link rel="stylesheet" href="rp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="menu-button" onclick="toggleMenu()">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+    
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3 class="highlight">Hello, I'm Riddhima.</h3>
+            <h2>I'm a</h2>
+            <h1 id="dynamic-text"></h1>
+            <br>
+            <div class="social-media">
+                <a href="https://in.pinterest.com/riddschauhan0610/"><i class="ri-pinterest-line"></i></a>
+                <a href="https://in.pinterest.com/riddschauhan0610/"><i class="ri-instagram-line"></i></a>
+                <a href="https://github.com/riddhimachauhan"><i class="ri-github-fill"></i></a>
+                <a href="https://in.linkedin.com/in/riddhima-chauhan-30a879281"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+            <a href="Riddhima Chauhan Resume.docx" download="Riddhima Chauhan Resume.docx">
+                <button class="cv-button">Download CV</button>
+            </a>
+        </div>
+    
+        <div class="home-image">
+            <img src="me.png" alt="Your Image">
+        </div>
+    </section>
+    
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-carousel">
+            <div class="portfolio-item">
+                <img src="9.png" alt="Portfolio Image 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-text">
+                        <h3>Muffin Media</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="12.png" alt="Portfolio Image 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-text">
+                        <h3>Muffin Media</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="15.png" alt="Portfolio Image 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-text">
+                        <h3>Manipal Updates</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="18.png" alt="Portfolio Image 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-text">
+                        <h3>Manipal Updates</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="30.png" alt="Portfolio Image 1">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-text">
+                        <h3>E-cell Mit Manipal</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="https://drive.google.com/file/d/144s4faJmxeCEdFlZg8r60hxFFBwXoPJY/view" class="link-button">View My Work</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <h3 class="highlight">About Me</h3>
+            <p>Hi, I'm Riddhima, a 19-year-old IT student at MIT Manipal. My passion lies in blending technology and creativity, which has led me to explore the fields of graphic design and web development. I’m proficient in Canva, Illustrator, and Figma, creating visually appealing designs with ease. Alongside my design skills, I’m also an amateur front-end web developer, constantly honing my abilities to build engaging and responsive websites. With a keen eye for detail and a drive to learn, I’m excited to continue growing in both design and development.</p>
+        </div>
+        <br>
+        <div class="about-right">
+            <div class="hover-box" id="hobbies">
+                <h4>Hobbies</h4>
+                <div class="hover-content">
+                    <p>Painting, Sketching, Design, Digital Art</p>
+                </div>
+            </div>
+            <div class="hover-box" id="skills">
+                <h4>Skills</h4>
+                <div class="hover-content">
+                    <p>HTML, CSS, JavaScript</p>
+                    <p>Design: Canva, Illustrator, Figma, Kittl</p>
+                </div>
+            </div>
+            <div class="hover-box" id="birthday">
+                <h4>Birthday</h4>
+                <div class="hover-content">
+                    <div id="countdown-container">
+                        <div class="countdown-box">
+                            <span id="countdown-days">0</span>
+                            <div class="days-text">days</div>
+                        </div>
+                        <i class="ri-cake-line cake-icon"></i> <!-- Cake icon added here -->
+                    </div>
+                </div>
+            </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-left">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="ri-phone-line"></i>
+                    <p>8368837041</p>
+                </div>
+                <div class="info-item">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:riddschauhan@gmail.com">riddschauhan@gmail.com</a>
+                </div>
+            </div>
+            <div class="thank-you">
+                <p>Thank You</p>
+            </div>
+        </div>
+    </section>  
+    
+    <script src="rp.js"></script>
+</body>
+</html>
